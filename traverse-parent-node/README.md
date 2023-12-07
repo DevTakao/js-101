@@ -1,0 +1,1 @@
+- How to traverse a parent or grandparent node in the DOM, from a certain node, without chaining .parent()

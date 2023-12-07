@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Targetting Closest</title>
+    <style>
+        .blue {
+            border-color: blue !important;
+            border-radius: 50%;
+        }
+
+        .wrapper {
+            text-align: center;
+        }
+
+        #starsvg {
+            border: 5px solid red;
+        }
+
+        #starpolygon {
+            cursor: pointer;
+        }
+
+        /* doesn't work */
+        /* #starpolygon:hover #starsvg {
+            border-color: yellow !important;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <svg id="starsvg" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+            <polygon id="starpolygon" points="100,10 120,80 190,80 130,130 150,200 100,150 50,200 70,130 10,80 80,80"
+                fill="none" stroke="black" stroke-width="5" />
+        </svg>
+        <svg id="starsvg" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+            <polygon id="starpolygon" points="100,10 120,80 190,80 130,130 150,200 100,150 50,200 70,130 10,80 80,80"
+                fill="none" stroke="black" stroke-width="5" />
+        </svg>
+        <svg id="starsvg" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+            <polygon id="starpolygon" points="100,10 120,80 190,80 130,130 150,200 100,150 50,200 70,130 10,80 80,80"
+                fill="none" stroke="black" stroke-width="5" />
+        </svg>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
